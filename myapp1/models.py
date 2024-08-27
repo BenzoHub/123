@@ -6,5 +6,6 @@ class Worker(models.Model):
     surname = models.CharField(max_length=30, blank=False)
     salary = models.IntegerField(default=0)
 
-
+    def __str__(self):
+        return f'{self.surname} {self.name}'
     
